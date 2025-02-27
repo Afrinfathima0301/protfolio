@@ -7,65 +7,30 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://www.blueoshan.com/hs-fs/hub/2419095/hub_generated/template_assets/145585738341/1700034914173/Blueoshan__Website_2023_Version_2/css/swiper.min.css">
 <style>
-.our-impact,.service-card__cta,.our-services,.banner{padding-top: 40px;padding-bottom: 40px;}
-.header{box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;background-color: #fff;padding-bottom: 8px;padding-top: 8px;position: -webkit-sticky;position: sticky;top: 0;z-index: 1028;}
+.our-impact,.service-card__cta,.our-services,.banner{padding-top: 40px;}
+.header{box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;background-color: #fff;padding-bottom: 15px;padding-top: 15px;position: -webkit-sticky;position: sticky;top: 0;z-index: 1028;}
 .header-content {align-items: center;column-gap: 15px;display: flex;justify-content: space-between;max-width: 1200px;}
-.header-logo{width: 85px;height: 85px;display: block;}
-.header__navbar-btn {background-color: #ff5c35;border-radius: 3px;color: #fff;padding: 8px 20px;text-align: left;display: inline-block;width: auto;font-weight: 600;}
-.header__navbar-btn {font-size: 16px; font-weight: bold; text-align: center; background-color: transparent; border-radius: 10px; border: 1px solid #1B3A57; transition: 0.5s; position: relative; overflow: hidden; cursor: pointer; z-index: 1;color: var(--color-primary); }
-.header__navbar-btn::after, .header__navbar-btn::before { content: ""; display: block; height: 100%; width: 100%; transform: skew(90deg) translate(-50%, -50%); position: absolute; inset: 50%; left: 25%; z-index: -1; transition: 0.5s ease-out; background-color: var(--color-primary); }
-.header__navbar-btn::before { top: -50%; left: -25%; transform: skew(90deg) rotate(180deg) translate(-50%, -50%); }
-.header__navbar-btn:hover::before { transform: skew(45deg) rotate(180deg) translate(-50%, -50%); }
-.header__navbar-btn:hover::after { transform: skew(45deg) translate(-50%, -50%); }
-.header__navbar-btn:hover { color: #fff; }
-.header__navbar-btn:active { filter: brightness(0.7); transform: scale(0.98); }
-.footer{background-color: #093144;padding-top: 50px;}
-.footer-area__left{margin-bottom: 25px;}
-.footer-area__left .logo{display: inline-block;}
-.footer-area__left .logo img{max-width: 100%;height: auto;width: 100px;filter: brightness(0) invert(1);}
-.footer-area__left p{margin-bottom: 15px;line-height: 1.8;color: #ccc;font-weight: 400;font-size: 17px;text-align: left;}
-.footer-area__right-content{margin-bottom: 25px;}
-.footer-area__right-content .list{margin-top: 30px;}
-.footer-area__right-content h2{font-size: 18px;font-weight: 700;margin-bottom: 15px;padding-bottom: 15px;position: relative;text-transform: capitalize;color: #fff;}
-.footer-area__right-content h2::before{position: absolute;content: "";left: 0;bottom: 0;background: #ff5c35;width: 35px;height: 2.5px;border-radius: 5px;}
-.footer-area__right-content ul li{margin-bottom: 15px;font-size: 14px;}
-.footer-area__right-content ul li a{color: #ccc;transition: .3s ease-in-out;font-weight: 500;}
-.footer-area__right-content ul li a:hover{color: #ff5c35;}
-.footer-area__left .app-list li:first-child a img {filter: drop-shadow(-5px 15px 30px rgba(250, 100, 0, 0.35));}
-.footer-bottom{border-top: 1px solid #042433;margin-top: 25px;background-color: #052a3c;}
-.footer-bottom p{text-align: center;padding-block: 20px;color: #ccc;}
-.footer-bottom p a{color: #ccc;}
-.footer-bottom p a:hover{text-decoration: underline;}
-@media(min-width:576px){
-    .footer-area__right-contents{display: flex;flex-wrap: wrap;justify-content: space-between;margin-inline: -15px;}
-    .footer-area__right-content{width: 50%;flex: 0 0 auto;padding-inline:15px;margin-left: -15px;}
-    .footer-area__right-content.sub-col{width: 100%;margin-top: 30px;}
-}
-@media(min-width:768px){
-    .footer-bottom{margin-top: 45px;}
-}
-@media(min-width:992px){
-    .footer-area__right-content{width: 25%;flex: 0 0 auto;padding-inline:15px;margin-left: -15px;margin-bottom: 0;}
-    .footer-area__right-content.sub-col{width: 100%;}
-    .footer-area__right-content:last-child .footer-area__right-content.sub-col{margin-top: 0;}
-}
-@media(min-width:1200px){
-    .footer-area{display: flex;flex-wrap: wrap;justify-content: center;}
-    .footer-area__left{width: 25%;flex: 0 0 auto;padding-inline:15px;margin-bottom: 0;}
-    .footer-area__right{width: 75%;flex: 0 0 auto;padding-inline:15px;display: flex;}
-}
+.header-logo{margin-bottom: 0;color: var(--color-dark);}
+.header-content__menu { display: flex ; align-items: center; gap: 2rem; }
+.header-navbar__list{display: flex;gap: 2rem;}
+.header-navbar__list-item{color: var(--color-primary);font-weight: 600;}
+.header-navbar__btn {background-color: #ff5c35;border-radius: 3px;color: #fff;padding: 8px 20px;text-align: left;display: inline-block;width: auto;font-weight: 600;}
+.header-navbar__btn {font-size: 16px; font-weight: 600; text-align: center; background-color: transparent; border-radius: 10px; border: 1px solid #1B3A57; transition: 0.5s; position: relative; overflow: hidden; cursor: pointer; z-index: 1;color: var(--color-primary); }
+.header-navbar__btn::after, .header-navbar__btn::before { content: ""; display: block; height: 100%; width: 100%; transform: skew(90deg) translate(-50%, -50%); position: absolute; inset: 50%; left: 25%; z-index: -1; transition: 0.5s ease-out; background-color: var(--color-primary); }
+.header-navbar__btn::before { top: -50%; left: -25%; transform: skew(90deg) rotate(180deg) translate(-50%, -50%); }
+.header-navbar__btn:hover::before { transform: skew(45deg) rotate(180deg) translate(-50%, -50%); }
+.header-navbar__btn:hover::after { transform: skew(45deg) translate(-50%, -50%); }
+.header-navbar__btn:hover { color: #fff; }
+.header-navbar__btn:active { filter: brightness(0.7); transform: scale(0.98); }
 .bo-main{background-image: url(images/bg-min.webp);background-size: cover;background-repeat: no-repeat;}
-
 .banner{padding-top: 40px;position: relative;}
-.banner-box{display: grid;grid-template-columns: 1fr;column-gap: 30px;align-items: center;}
+.banner-box{display: grid;grid-template-columns: 1fr;column-gap: 30px;}
 .banner-box-right__image{order: 1;}
 .banner-box-left__content{order: 2;}
 .banner-box-left__content-title{color: var(--color-primary);font-weight: 700;line-height: 1.1;margin-bottom: 18px;font-size: 30px;}
 .banner-box-left__content-subtitle{margin-bottom: 10px;}
-/* .banner-box-right__image{background-image: url(/bo-in-grid/images/afrin_dp.png);clip-path: url(#clipPathSvg);-webkit-clip-path: url(#clipPathSvg);background-size: cover;background-position-x: 50%;background-position-y: 50%;} */
 .text-animations {height: 70px}
 .text-swiper{background-color: var(--color-secondary);color: var(--color-primary);display: inline-block;font-size: var(--h5-font-size);font-weight: 800;padding: 10px}
-/* .banner-box-left__content-swiper{box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;} */
 .banner-box-right__feature{height: 100%;width: 385px;}
 @media(min-width: 768px){
 .banner-box{grid-template-columns: 1fr 1fr;}
@@ -79,14 +44,12 @@
 .banner-box-left__content-title{font-size: var(--h1-font-size);}
 .text-swiper{font-size: 28px;}
 }
-
 .our-services{padding-top: 50px;padding-bottom: 50px;}
 .our-services__title{margin-bottom: 20px;}
 .our-services__description{margin-bottom: 20px;font-size: var(--h6-font-size);}
 @media(min-width: 768px){
 .our-services__title{margin-bottom: 40px;}
 }
-
 .service-cards {display: grid;grid-template-columns: 1fr;gap: 2rem;}
 .service-card {position: relative;overflow: hidden;background-color: var(--color-dark);color: #fff;height: 100%;padding: 3rem;border-radius: 15px;box-shadow: 0 14px 30px rgba(51, 51, 51, .1);display: inline-block;text-align: center;transition: .3s ease-in;}
 .service-card:after {background: var(--color-secondary);border-radius: 32px;bottom: -16px;content: "";height: 55px;position: absolute;right: -60px;transform: scale(1);transform-origin: 50% 50%;transition: transform .25s ease-out;width: 55px;z-index: 1;}
@@ -132,57 +95,65 @@
 @media(min-width: 992px){
 .flex-cards {display: grid;grid-template-columns: 1fr 1fr;gap: 30px;}
 }
-
-.cta-cards{padding-top: 50px;}
-.cta-cards__felx-box {display: grid;grid-template-columns: 1fr;gap: 30px;height: auto;}
-.cta-card {background-color: #fff;box-shadow: 0 6px 15px rgba(0, 0, 0, .08);transition: .3s;padding: 20px;position: relative;}
-.cta-card:hover{background-color: #00a4bd;}
-.cta-card--purple:hover{background-color: #6978d0;}
-.cta-card:hover .cta-card-title,.cta-card:hover .cta-card-description,.cta-card:hover .cta-card-svg{color: var(--color-light);fill: var(--color-light);}
-.cta-card-title {color: var(--color-accent);transition: .3s;font-size: var(--h3-font-size);font-weight: 400;margin-bottom: 15px;line-height: 1.2;}
-.cta-card-description {margin-bottom: 6rem;font-weight: 400;color: #000;line-height: var(--line-height-secondary);}
-.cta-card-svg {height: auto;width: 24px;fill: #ff7959;position: absolute;bottom: 30px;}
-.cta-card-title--purple{color: #6b77d0;}
-@media(min-width: 768px){
-.cta-cards__felx-box {grid-template-columns: repeat(3, 1fr);}
-.cta-card-title{font-size: 24px;}
+.footer{background-color: #093144;padding-top: 50px;}
+.footer-area__left{margin-bottom: 25px;}
+.footer-area__left .logo{display: inline-block;}
+.footer-area__left .logo img{max-width: 100%;height: auto;width: 100px;filter: brightness(0) invert(1);}
+.footer-area__left p{margin-bottom: 15px;line-height: 1.8;color: #ccc;font-weight: 400;font-size: 17px;text-align: left;}
+.footer-area__right-content{margin-bottom: 25px;}
+.footer-area__right-content .list{margin-top: 30px;}
+.footer-area__right-content h2{font-size: 18px;font-weight: 700;margin-bottom: 15px;padding-bottom: 15px;position: relative;text-transform: capitalize;color: #fff;}
+.footer-area__right-content h2::before{position: absolute;content: "";left: 0;bottom: 0;background: #ff5c35;width: 35px;height: 2.5px;border-radius: 5px;}
+.footer-area__right-content ul li{margin-bottom: 15px;font-size: 14px;}
+.footer-area__right-content ul li a{color: #ccc;transition: .3s ease-in-out;font-weight: 500;}
+.footer-area__right-content ul li a:hover{color: #ff5c35;}
+.footer-area__left .app-list li:first-child a img {filter: drop-shadow(-5px 15px 30px rgba(250, 100, 0, 0.35));}
+.footer-bottom{border-top: 1px solid #042433;margin-top: 25px;background-color: #052a3c;}
+.footer-bottom p{text-align: center;padding-block: 20px;color: #ccc;}
+.footer-bottom p a{color: #ccc;}
+.footer-bottom p a:hover{text-decoration: underline;}
+@media(min-width:576px){
+    .footer-area__right-contents{display: flex;flex-wrap: wrap;justify-content: space-between;margin-inline: -15px;}
+    .footer-area__right-content{width: 50%;flex: 0 0 auto;padding-inline:15px;margin-left: -15px;}
+    .footer-area__right-content.sub-col{width: 100%;margin-top: 30px;}
 }
-@media(min-width: 992px){
-.cta-card-title{font-size: 30px;}
+@media(min-width:768px){
+    .footer-bottom{margin-top: 45px;}
 }
-
-.our-blogs {padding-top: 50px;padding-bottom: 30px}
-.our-blogs-subtitle {color: #6b77d0;font-weight: 600;letter-spacing: 2px;text-align: center;text-transform: uppercase;}
-.our-blogs-title{color: #ff7959;font-weight: 600;margin: 0;text-align: center;}
-.our-blogs-description{margin-bottom: 30px;padding-top: 10px;text-align: center;}
-.our-blog-cards{display: grid;grid-template-columns: 1fr;gap: 30px;}
-.blog-card-img{display: block;height: auto !important;max-width: 100%;object-fit: cover;width: 100%;}
-.our-blog-card {background-color: #fff;border: 1px solid rgba(0, 0, 0, .04);border-radius: 0;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;box-shadow: 0 6px 15px rgba(0, 0, 0, .08);padding-left: 0;height: auto;}
-.card-body{padding: 10px 30px 30px;text-align: center;}
-.card-footer {border-top: 1px dotted #7c7e8e;color: var(--color-secondary);padding: 15px 0;text-align: center;overflow: hidden;position: relative;transition: color .15s ease-in-out;z-index: 0;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;}
-.card-footer::before{background-color: var(--color-secondary);bottom: -1px;content: "";height: 100%;left: 0;position: absolute;transform: translateY(100%);transition: transform .5s ease;width: 100%;z-index: -1;}
-.our-blog-card:hover .card-footer::before{bottom: 0;transform: translateY(0);}
-.our-blog-card:hover .card-footer{color: var(--color-light);}
-.blog-author__details{font-size: 14px;margin-bottom: 0;padding-top: 0;}
-.blog-author{color: #565656;}
-.blog-title{font-size: 19px;font-weight: 400;margin-bottom: 15px;margin-top: 10px;color: #000;display: inline-block;}
-@media(min-width: 768px){
-.our-blog-cards{grid-template-columns: repeat(3,1fr);}
+@media(min-width:992px){
+    .footer-area__right-content{width: 25%;flex: 0 0 auto;padding-inline:15px;margin-left: -15px;margin-bottom: 0;}
+    .footer-area__right-content.sub-col{width: 100%;}
+    .footer-area__right-content:last-child .footer-area__right-content.sub-col{margin-top: 0;}
+}
+@media(min-width:1200px){
+    .footer-area{display: flex;flex-wrap: wrap;justify-content: center;}
+    .footer-area__left{width: 25%;flex: 0 0 auto;padding-inline:15px;margin-bottom: 0;}
+    .footer-area__right{width: 75%;flex: 0 0 auto;padding-inline:15px;display: flex;}
 }
 </style>
 </head>
 <body>
 <div class="bo-main">
-<header class="header">
-  <div class="container">
-    <div class="header-content">
-      <a href="#">
-      <img src="images/afrin-fathima.png" alt="logo"  class="header-logo">
-      <a href="#" class="header__navbar-btn">contact me</a>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="#">
+          <p class="header-logo">Afrin Fathima</p>
+        </a>
+        <div class="header-content__menu">
+          <nav class="header-navbar">
+            <ul class="header-navbar__list">
+              <li><a href="#home" class="header-navbar__list-item">Home</a></li>
+              <li><a href="#about" class="header-navbar__list-item">About Me</a></li>
+              <li><a href="#services" class="header-navbar__list-item">Services</a></li>
+            </ul>
+          </nav>
+          <a href="#" class="header-navbar__btn">Hire Me</a>
+        </div>
+      </div>
     </div>
-  </div>
-</header>
-<section class="banner">
+  </header>  
+<section class="banner" id="home">
   <div class="container">
     <div class="banner-box">
       <div class="banner-box-left__content">
@@ -215,7 +186,7 @@
     </div>
   </div>
 </section>
-<section class="our-services">
+<section class="our-services" id="about">
   <div class="container">
   <h2 class="our-services__title">My Development Services</h2>
   <p class="our-services__description">I am a frontend developer with a passion for creating responsive, interactive, and visually appealing web applications. My expertise includes building modern, user-friendly websites and applications using the latest technologies.</p>
@@ -223,7 +194,7 @@
   <p class="our-services__description">From crafting intuitive UI/UX designs to implementing scalable frontend solutions, I am committed to helping businesses establish a strong online presence and achieve their digital goals.</p>
   </div>
   </section>  
-  <section class="service-card__cta">
+  <section class="service-card__cta" id="services">
     <div class="container">
       <div class="service-cards">
         <a href="#" class="service-card">
@@ -232,7 +203,7 @@
           <p class="service-card__description">Transforming ideas into visually stunning, user-friendly designs with Figma and modern design principles.</p>
         </a>
         <a href="#" class="service-card">
-          <img src="images/web-development.webp" alt="Web Development" class="service-card__image">
+          <img src="images/web-dev.png" alt="Web Development" class="service-card__image">
           <h3 class="service-card__title">Web <br>Development</h3>
           <p class="service-card__description">Building high-performance, responsive websites that bring concepts to life using cutting-edge technologies.</p>
         </a>
@@ -247,12 +218,12 @@
           <p class="service-card__description">Creating dynamic, scalable, and engaging applications with JavaScript, optimizing performance and efficiency.</p>
         </a>
         <a href="#" class="service-card">
-          <img src="images/seo-optimization.webp" alt="SEO Optimization" class="service-card__image">
+          <img src="images/seo.png" alt="SEO Optimization" class="service-card__image">
           <h3 class="service-card__title">SEO & <br>Optimization</h3>
           <p class="service-card__description">Boosting online visibility with powerful SEO strategies, enhancing website ranking and engagement.</p>
         </a>
         <a href="#" class="service-card">
-          <img src="images/responsive-design.webp" alt="Responsive Web Design" class="service-card__image">
+          <img src="images/responsive.png" alt="Responsive Web Design" class="service-card__image">
           <h3 class="service-card__title">Responsive <br>Design</h3>
           <p class="service-card__description">Ensuring pixel-perfect, seamless experiences across all devices with modern, responsive design techniques.</p>
         </a>

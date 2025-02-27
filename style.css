@@ -53,12 +53,13 @@
     --font-weight-normal: 400;
     --font-weight-bold: 700;
     
-    --color-primary: #1B3A57;  /* Deep Blue - Strong and sophisticated */
-    --color-secondary: #F8F1ED; /* Soft Gray - Clean background */
-    --color-accent: #007BFF;   /* Bright Blue - Modern and engaging */
-    --color-text-primary: #2D2D2D; /* Charcoal - Optimal readability */
-    --color-light: #FFFFFF;       /* Pure White - Contrast */
-    --color-dark: #0F1B2D;      /* Dark backgrounds */
+    --color-primary: #463f3a;  
+    --color-secondary: #bee3db; 
+    --color-accent: #555b6e; 
+    --color-bg: #dee2ff;
+    --color-text-primary: #2D2D2D; 
+    --color-light: #FFFFFF;    
+    --color-dark: #0F1B2D;  
 
     --border-radius-primary: 15px;
     --border-color: #dee2e6;
