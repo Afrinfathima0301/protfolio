@@ -3,315 +3,426 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BO</title>
+<title>Afrin | Frontend Developer & UI/UX Specialist</title>
+<meta name="description" content="Afrin - A passionate Frontend Developer specializing in interactive UI/UX, animations, and seamless web experiences. Let's craft stunning websites!">
+<meta name="keywords" content="Frontend Developer, UI/UX Designer, Web Animations, JavaScript, React, CSS, Web Performance">
+<meta name="author" content="Afrin">
+<meta name="robots" content="index, follow">
+<link rel="shortcut icon" href="images/web-dev.webp" type="image/x-icon">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://www.blueoshan.com/hs-fs/hub/2419095/hub_generated/template_assets/145585738341/1700034914173/Blueoshan__Website_2023_Version_2/css/swiper.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <style>
-.our-impact,.service-card__cta,.our-services,.banner{padding-top: 40px;}
-.header{box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;background-color: #fff;padding-bottom: 15px;padding-top: 15px;position: -webkit-sticky;position: sticky;top: 0;z-index: 1028;}
+.banner{padding-top: 25px;}
+.banner,.about-me,.my-impact,.service-card__cta,.my-skills,.contact-me{padding-bottom: 25px;}
+.header{box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;background-color: var(--color-light);padding-bottom: 20px;padding-top: 20px;position: -webkit-sticky;position: sticky;top: 0;z-index: 1028;}
+.menu-bar svg{width: 25px; height: 25px;fill: var(--color-primary);}
+.menu-bar .menu-close, .menu-bar.active .menu-open{display: none;}
+.menu-bar .menu-open, .menu-bar.active .menu-close{display: block;}
 .header-content {align-items: center;column-gap: 15px;display: flex;justify-content: space-between;max-width: 1200px;}
 .header-logo{margin-bottom: 0;color: var(--color-dark);}
-.header-content__menu { display: flex ; align-items: center; gap: 2rem; }
 .header-navbar__list{display: flex;gap: 2rem;}
 .header-navbar__list-item{color: var(--color-primary);font-weight: 600;}
-.header-navbar__btn {background-color: #ff5c35;border-radius: 3px;color: #fff;padding: 8px 20px;text-align: left;display: inline-block;width: auto;font-weight: 600;}
-.header-navbar__btn {font-size: 16px; font-weight: 600; text-align: center; background-color: transparent; border-radius: 10px; border: 1px solid #1B3A57; transition: 0.5s; position: relative; overflow: hidden; cursor: pointer; z-index: 1;color: var(--color-primary); }
-.header-navbar__btn::after, .header-navbar__btn::before { content: ""; display: block; height: 100%; width: 100%; transform: skew(90deg) translate(-50%, -50%); position: absolute; inset: 50%; left: 25%; z-index: -1; transition: 0.5s ease-out; background-color: var(--color-primary); }
-.header-navbar__btn::before { top: -50%; left: -25%; transform: skew(90deg) rotate(180deg) translate(-50%, -50%); }
-.header-navbar__btn:hover::before { transform: skew(45deg) rotate(180deg) translate(-50%, -50%); }
-.header-navbar__btn:hover::after { transform: skew(45deg) translate(-50%, -50%); }
-.header-navbar__btn:hover { color: #fff; }
-.header-navbar__btn:active { filter: brightness(0.7); transform: scale(0.98); }
-.bo-main{background-image: url(images/bg-min.webp);background-size: cover;background-repeat: no-repeat;}
-.banner{padding-top: 40px;position: relative;}
-.banner-box{display: grid;grid-template-columns: 1fr;column-gap: 30px;}
+.main{background-image: url(images/bg-min.webp);background-size: cover;background-repeat: no-repeat;background-position: bottom;}
+.banner-box{display: grid;grid-template-columns: 1fr;column-gap: 30px;align-items: center;}
 .banner-box-right__image{order: 1;}
 .banner-box-left__content{order: 2;}
-.banner-box-left__content-title{color: var(--color-primary);font-weight: 700;line-height: 1.1;margin-bottom: 18px;font-size: 30px;}
+.banner-box-left__content-title{color: var(--color-primary);font-weight: 700;margin-bottom: 18px;}
 .banner-box-left__content-subtitle{margin-bottom: 10px;}
 .text-animations {height: 70px}
 .text-swiper{background-color: var(--color-secondary);color: var(--color-primary);display: inline-block;font-size: var(--h5-font-size);font-weight: 800;padding: 10px}
-.banner-box-right__feature{height: 100%;width: 385px;}
-@media(min-width: 768px){
-.banner-box{grid-template-columns: 1fr 1fr;}
-.banner-box-left__content{order: 1;}
-.banner-box-right__image{order: 2;margin: auto;width: -webkit-fill-available;}
-.banner-box-left__content-title{font-size: 32px;}
-.text-animations {height: 120px}
-.banner-box-left__content-subtitle{margin-bottom: 40px;}
-}
-@media(min-width: 992px){
-.banner-box-left__content-title{font-size: var(--h1-font-size);}
-.text-swiper{font-size: 28px;}
-}
-.our-services{padding-top: 50px;padding-bottom: 50px;}
-.our-services__title{margin-bottom: 20px;}
-.our-services__description{margin-bottom: 20px;font-size: var(--h6-font-size);}
-@media(min-width: 768px){
-.our-services__title{margin-bottom: 40px;}
-}
+.banner-box-left__content-btn{margin-top: 1rem;}
+.banner-box-left__content-social { display: flex; gap: 2rem; align-items: center; margin-top: 2rem; }
+.banner-box-left__content-social__icon svg { width: 40px; height: auto; }
+.about-me__title{margin-bottom: 20px;}
+.about-me__description-content{margin-bottom: 20px;color: var(--color-dark);}
+.my-impact__left-box-title {letter-spacing: 1px;margin-bottom: 20px;font-weight: var(--font-weight-normal);text-align: center;}
+.my-impact__left-box-title--span{font-weight: 600 !important;color: var(--color-accent);}
+.my-impact__right-box {text-align: center; }
+.my-impact-card-count { font-weight: 700; color: var(--color-accent); line-height: 1; margin-bottom: 10px;}
+.my-impact-card-title{font-size: 18px;font-weight: 700;text-align: center;color: var(--color-primary);margin-bottom: 20px;}
+.about-me__content{display: grid;grid-template-columns: 1fr;}
+.my-skill__content{width: 80%; margin-left: auto; margin-right: auto;}
+.my-skills__title { margin-bottom: 1rem; text-align: center;}
+.my-skill p { margin-bottom: 5px; font-weight: 600; }
+.my-skill__bar { width: 100%; height: 12px; background: var(--color-secondary); border-radius: 6px; position: relative; overflow: hidden; }
+.my-skill__fill { height: 100%; width: 0; background: var(--color-accent); transition: width 2s ease-in-out; position: relative; border-radius: 6px; }
+.my-skill__percent { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 12px; font-weight: bold; color: white; opacity: 1; transition: opacity 1s ease-in-out; }
+.my-skill { margin-bottom: 1rem; }
+.service-cards__title{margin-bottom: 2rem;text-align: center;}
 .service-cards {display: grid;grid-template-columns: 1fr;gap: 2rem;}
-.service-card {position: relative;overflow: hidden;background-color: var(--color-dark);color: #fff;height: 100%;padding: 3rem;border-radius: 15px;box-shadow: 0 14px 30px rgba(51, 51, 51, .1);display: inline-block;text-align: center;transition: .3s ease-in;}
+.service-card {position: relative;overflow: hidden;background-color: var(--color-dark);color: var(--color-light);height: 100%;padding: 2rem;border-radius: 15px;box-shadow: 0 14px 30px rgba(51, 51, 51, .1);display: inline-block;text-align: center;transition: .3s ease-in;}
 .service-card:after {background: var(--color-secondary);border-radius: 32px;bottom: -16px;content: "";height: 55px;position: absolute;right: -60px;transform: scale(1);transform-origin: 50% 50%;transition: transform .25s ease-out;width: 55px;z-index: 1;}
 .service-card:hover::after{transform: scale(21);}
 .service-card:hover{color: var(--color-dark );}
-.service-card__image,.service-card__title,.service-card__description{position: relative;z-index: 9;}
+.service-card__image,.service-card__title,.service-card__item{position: relative;z-index: 9;}
 .service-card__image { width: 50px; margin-bottom: 10px; }
-.service-card__title {font-size: 22px;font-weight: 500;line-height: 1.2;margin-bottom: 1rem;}
-@media(min-width: 576px){
-.service-cards{grid-template-columns: repeat(2, 1fr);}
-}
-@media(min-width: 768px){
-.service-card__title {font-size: 28px;}
-.service-card__description{font-size: var(--h6-font-size);}
-}
-@media(min-width: 992px){
-.service-cards{grid-template-columns: repeat(3,33.33%);}
-}
-.our-impact{padding-top: 50px;}
-.our-impact__left-box-title {font-size: 21px;letter-spacing: 1px;margin-bottom: 20px;font-weight: var(--font-weight-normal);}
-.our-impact__left-box-title--span{font-weight: 600 !important;color: var(--color-accent);}
-.our-impact-card-img{width: 64px;}
-.our-impact__right-box {text-align: center; }
-.our-impact-card-count { font-weight: 700; color: var(--color-accent); line-height: 1; margin-bottom: 10px;}
-.our-impact-card-title{font-size: 18px;font-weight: 700;text-align: center;color: #233d62;margin-bottom: 20px;}
-@media(min-width: 576px){
-.our-impact__right-box { display: flex; justify-content: center; align-items: center;}
-.our-impact-card { width: 33.33%;}
-}
-@media(min-width: 768px){
-.our-impact__left-box-title {font-size: 38px;text-align: center;}
-}
-@media(min-width: 992px){
-.our-impact__flex-box {display: grid;grid-template-columns: 2fr 3fr;}
-.our-impact__left-box-title {font-size: 40px;text-align: left;}
-}
-.flex-card-right,.flex-card-left{padding-left: 20px;}
-.two-col-card {padding-top: 30px;}
-.card-img {height: 150px !important;margin-bottom: 10px;width: auto;}
-.card-title{color: #000;font-weight: 600;padding-bottom: 5px;position: relative;}
-.card-title::before{background-color: var(--color-primary);color: var(--color-primary);content: "";height: 100%;left: -15px;position: absolute;top: 0;width: 4px;}
-.card-description{color: #000;line-height: var(--line-height-secondary);}
-@media(min-width: 992px){
-.flex-cards {display: grid;grid-template-columns: 1fr 1fr;gap: 30px;}
-}
-.footer{background-color:var(--color-dark);padding-top: 50px;}
-.footer-area__left{margin-bottom: 25px;}
-.footer-area__left .logo{display: inline-block;}
-.footer-area__left .logo img{max-width: 100%;height: auto;width: 100px;filter: brightness(0) invert(1);}
-.footer-area__left p{margin-bottom: 15px;line-height: 1.8;color: #ccc;font-weight: 400;font-size: 17px;text-align: left;}
-.footer-area__right-content{margin-bottom: 25px;}
-.footer-area__right-content .list{margin-top: 30px;}
-.footer-area__right-content h2{font-size: 18px;font-weight: 700;margin-bottom: 15px;padding-bottom: 15px;position: relative;text-transform: capitalize;color: #fff;}
-.footer-area__right-content h2::before{position: absolute;content: "";left: 0;bottom: 0;background: #ff5c35;width: 35px;height: 2.5px;border-radius: 5px;}
-.footer-area__right-content ul li{margin-bottom: 15px;font-size: 14px;}
-.footer-area__right-content ul li a{color: #ccc;transition: .3s ease-in-out;font-weight: 500;}
-.footer-area__right-content ul li a:hover{color: #ff5c35;}
-.footer-area__left .app-list li:first-child a img {filter: drop-shadow(-5px 15px 30px rgba(250, 100, 0, 0.35));}
-.footer-bottom{border-top: 1px solid #042433;margin-top: 25px;background-color: var(--color-dark);}
-.footer-bottom p{text-align: center;padding-block: 20px;color: #ccc;}
+.service-card__title {font-weight: 500;line-height: 1.2;margin-bottom: 1rem;}
+.contact-me__content{text-align: center;}
+.contact-me__title { margin-bottom: 1rem; color: var(--color-primary); }
+.contact-me__description {font-weight: 500; color: var(--color-accent);margin-bottom: 1rem; }
+.contact-me__form-mail input{padding: 10px 20px;font-size: 14px;background: transparent;border: 1px solid #555b6e;color: var(--color-primary);width: 100%;border-radius: 5px;}
+.contact-me__form-mail input:focus{box-shadow: none;outline: 0;}
+.contact-me__form-mail { margin-bottom: 1rem; }
+.footer{background-color:var(--color-dark);padding: 25px;}
+.footer-bottom{border-top: 1px solid #042433;background-color: var(--color-dark);}
+.footer-bottom p{text-align: center;color: #ccc;margin: 0;}
 .footer-bottom p a{color: #ccc;}
 .footer-bottom p a:hover{text-decoration: underline;}
-@media(min-width:576px){
-    .footer-area__right-contents{display: flex;flex-wrap: wrap;justify-content: space-between;margin-inline: -15px;}
-    .footer-area__right-content{width: 50%;flex: 0 0 auto;padding-inline:15px;margin-left: -15px;}
-    .footer-area__right-content.sub-col{width: 100%;margin-top: 30px;}
+
+@media(min-width: 576px){
+.my-impact__right-box { display: flex; justify-content: center; align-items: center;}
+.my-impact-card { width: 33.33%;}
 }
-@media(min-width:768px){
-    .footer-bottom{margin-top: 45px;}
+@media(max-width: 768px){
+.header-navbar { margin-bottom: 2rem; }
+.header-navbar__list{flex-direction: column;}
+.header-content__menu {display: flex;flex-direction: column; padding: 2rem 3rem;background: var(--color-light);position: fixed;left: -100%; width: 100%; height: 100%; transition: left 0.3s ease-in-out;top: 65px;}
+.menu-bar.active + .header-content__menu{left: 0;top: 65px;}
 }
-@media(min-width:992px){
-    .footer-area__right-content{width: 25%;flex: 0 0 auto;padding-inline:15px;margin-left: -15px;margin-bottom: 0;}
-    .footer-area__right-content.sub-col{width: 100%;}
-    .footer-area__right-content:last-child .footer-area__right-content.sub-col{margin-top: 0;}
+@media(min-width: 768px){
+.banner{padding-top: 50px;}
+.banner,.about-me,.my-impact,.service-card__cta,.my-skills,.contact-me{padding-bottom: 50px;}
+.menu-bar{display: none;}
+.header-content__menu { display: flex ; align-items: center; gap: 2rem;position: unset;flex-direction: row; }
+.banner-box{grid-template-columns: 1fr 1fr;}
+.banner-box-left__content{order: 1;}
+.banner-box-right__image{order: 2;margin: auto;width: -webkit-fill-available;}
+.banner-box-left__content-social{margin-top: 1rem;}
+.banner-box-left__content-btn{margin-top: 2rem;}
+.about-me__content{grid-template-columns: 1fr 1fr;}
+.text-animations {height: 120px}
+.banner-box-left__content-subtitle{margin-bottom: 40px;}
+.service-cards{grid-template-columns: repeat(2, 1fr);}
+.contact-me__content{width: 75%; margin-right: auto; margin-left: auto;}
+.contact-me__description { width: 80%; margin-right: auto; margin-left: auto; }
+.contact-form__content{width: 75%;margin: 0px auto;}
 }
-@media(min-width:1200px){
-    .footer-area{display: flex;flex-wrap: wrap;justify-content: center;}
-    .footer-area__left{width: 25%;flex: 0 0 auto;padding-inline:15px;margin-bottom: 0;}
-    .footer-area__right{width: 75%;flex: 0 0 auto;padding-inline:15px;display: flex;}
+@media(min-width: 992px){
+.text-swiper{font-size: 28px;}
+.my-impact__flex-box {display: grid;grid-template-columns: 2fr 3fr;}
+.my-impact__left-box-title {text-align: left;}
+.service-cards{grid-template-columns: repeat(3,1fr);}
+.contact-me__form{display: flex;align-items: center;gap: 1rem;}
+.contact-me__form-mail{width: calc(60% - 1rem/2);margin: 0;}
+.contact-me__form-btn{width: calc(40% - 1rem/2);}
+.cm-btn{width: 65%; margin-right: auto; display: block;border-radius: 5px;}
 }
 </style>
 </head>
 <body>
-<div class="bo-main">
-  <header class="header">
-    <div class="container">
-      <div class="header-content">
-        <a href="#">
-          <p class="header-logo">Afrin Fathima</p>
-        </a>
-        <div class="header-content__menu">
-          <nav class="header-navbar">
-            <ul class="header-navbar__list">
-              <li><a href="#home" class="header-navbar__list-item">Home</a></li>
-              <li><a href="#about" class="header-navbar__list-item">About Me</a></li>
-              <li><a href="#services" class="header-navbar__list-item">Services</a></li>
-            </ul>
-          </nav>
-          <a href="#" class="header-navbar__btn">Hire Me</a>
+<div class="main">
+<header class="header">
+<div class="container">
+  <div class="header-content">
+    <a href="#">
+      <p class="header-logo">Afrin Fathima</p>
+    </a>
+    <a href="#" class="menu-bar" onclick="toggleMenu()">
+      <svg xmlns="http://www.w3.org/2000/svg" class="menu-open" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="menu-close" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+    </a>
+    <div class="header-content__menu">
+      <nav class="header-navbar">
+        <ul class="header-navbar__list">
+          <li><a href="#home" class="header-navbar__list-item">Home</a></li>
+          <li><a href="#about" class="header-navbar__list-item">About Me</a></li>
+          <li><a href="#services" class="header-navbar__list-item">Services</a></li>
+          <li><a href="#contact" class="header-navbar__list-item">Contact Me</a></li>
+        </ul>
+      </nav>
+      <a href="https://contact-me__form-mail.google.com/contact-me__form-mail/?view=cm&fs=1&to=afrinfathima0301@gcontact-me__form-mail.com" target="_blank" class="primary-btn">Hire Me</a>
+    </div>
+  </div>
+</div>
+</header>  
+<section class="banner" id="home">
+<div class="container">
+<div class="banner-box">
+  <div class="banner-box-left__content">
+    <p>Hi I'M Afrin Fathima </p>
+    <h1 class="banner-box-left__content-title">Web Developer</h1>
+    <h6 class="banner-box-left__content-subtitle">Crafting Modern & Scalable Web Solutions</h6>
+    <div class="swiper text-animations">
+      <div class="swiper-wrapper">
+        <div class="banner-box-left__content-swiper swiper-slide">
+          <p class="text-swiper">Responsive & Interactive UI Designs</p>
+        </div>
+        <div class="banner-box-left__content-swiper swiper-slide">
+          <p class="text-swiper">Optimized & Scalable Web Applications</p>
+        </div>
+        <div class="banner-box-left__content-swiper swiper-slide">
+          <p class="text-swiper">Seamless Frontend Development</p>
+        </div>
+        <div class="banner-box-left__content-swiper swiper-slide">
+          <p class="text-swiper">Efficient Form Validations & UI Enhancements</p>
+        </div>
+        <div class="banner-box-left__content-swiper swiper-slide">
+          <p class="text-swiper">Delivering Excellence in Web Technologies</p>
         </div>
       </div>
     </div>
-  </header>  
-<section class="banner" id="home">
-  <div class="container">
-    <div class="banner-box">
-      <div class="banner-box-left__content">
-        <p>Hi I'M Afrin Fathima </p>
-        <h1 class="banner-box-left__content-title">Web Developer</h1>
-        <h6 class="banner-box-left__content-subtitle">Crafting Modern & Scalable Web Solutions</h6>
-        <div class="swiper text-animations">
-          <div class="swiper-wrapper">
-            <div class="banner-box-left__content-swiper swiper-slide">
-              <p class="text-swiper">Responsive & Interactive UI Designs</p>
-            </div>
-            <div class="banner-box-left__content-swiper swiper-slide">
-              <p class="text-swiper">Optimized & Scalable Web Applications</p>
-            </div>
-            <div class="banner-box-left__content-swiper swiper-slide">
-              <p class="text-swiper">Seamless Frontend Development</p>
-            </div>
-            <div class="banner-box-left__content-swiper swiper-slide">
-              <p class="text-swiper">Efficient Form Validations & UI Enhancements</p>
-            </div>
-            <div class="banner-box-left__content-swiper swiper-slide">
-              <p class="text-swiper">Delivering Excellence in Web Technologies</p>
+    <div class="banner-box-left__content-social">
+      <a href="https://github.com/Afrinfathima0301" target="_blank" class="banner-box-left__content-social__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+      <a href="https://medium.com/@afrinfathima0301" target="_blank" class="banner-box-left__content-social__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M180.5 74.3C80.8 74.3 0 155.6 0 256S80.8 437.7 180.5 437.7 361 356.4 361 256 280.2 74.3 180.5 74.3zm288.3 10.6c-49.8 0-90.2 76.6-90.2 171.1s40.4 171.1 90.3 171.1 90.3-76.6 90.3-171.1H559C559 161.5 518.6 84.9 468.8 84.9zm139.5 17.8c-17.5 0-31.7 68.6-31.7 153.3s14.2 153.3 31.7 153.3S640 340.6 640 256C640 171.4 625.8 102.7 608.3 102.7z"/></svg></a>
+      <a href="https://www.linkedin.com/in/afrin-fathima-web-developer/" target="_blank" class="banner-box-left__content-social__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+    </div>
+    <a href="https://contact-me__form-mail.google.com/contact-me__form-mail/?view=cm&fs=1&to=afrinfathima0301@gcontact-me__form-mail.com" target="_blank" class="banner-box-left__content-btn primary-btn">Quick Connect</a>
+  </div>
+  <div class="banner-box-right__image">
+    <img src="images/web-dev.webp" alt="Afrin Fathima Web Developer" class="banner-box-right__feature">
+  </div>
+</div>
+</div>
+</section>
+<section class="about-me" id="about">
+<div class="container">
+  <div class="about-me__content">
+    <div class="about-me__description">
+      <h2 class="about-me__title">Who am i?</h2>
+      <p class="about-me__description-content">I'm Afrin Fathima, a passionate Front-End Developer & HubSpot CMS Expert dedicated to crafting high-performing, visually engaging, and SEO-optimized websites. With 2+ years of experience, I specialize in building responsive web applications using HTML, CSS, JavaScript, React.js, and Bootstrap, ensuring seamless user experiences across all devices.</p>
+      <p class="about-me__description-content">Beyond development, I focus on website performance, SEO strategies, and HubSpot CMS customization, including theme setup, module conversions, and API integrations. Whether it's a sleek business website, a high-speed landing page, or a fully optimized HubSpot site, I bring creativity and technical expertise to deliver exceptional results.</p>
+      <p class="about-me__description-content">💡 Let’s create something impactful together! 🚀</p>
+    </div>
+    <div id="skills" class="my-skills">
+      <h2 class="my-skills__title">My Skills</h2>
+        <div class="my-skill__content">
+        <div class="my-skill">
+          <p>HTML</p>
+          <div class="my-skill__bar">
+            <div class="my-skill__fill" data-percent="95">
+              <span class="my-skill__percent">95%</span>
             </div>
           </div>
         </div>
+        <div class="my-skill">
+          <p>CSS</p>
+          <div class="my-skill__bar">
+            <div class="my-skill__fill" data-percent="90">
+              <span class="my-skill__percent">90%</span>
+            </div>
+          </div>
+        </div>
+        <div class="my-skill">
+          <p>JavaScript</p>
+          <div class="my-skill__bar">
+            <div class="my-skill__fill" data-percent="70">
+              <span class="my-skill__percent">70%</span>
+            </div>
+          </div>
+        </div>
+        <div class="my-skill">
+          <p>HubSpot CMS</p>
+          <div class="my-skill__bar">
+            <div class="my-skill__fill" data-percent="85">
+              <span class="my-skill__percent">85%</span>
+            </div>
+          </div>
+        </div>
+        <div class="my-skill">
+          <p>SEO Optimization</p>
+          <div class="my-skill__bar">
+            <div class="my-skill__fill" data-percent="90">
+              <span class="my-skill__percent">90%</span>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>   
+  </div>
+</div>
+</section> 
+<section class="my-impact">
+  <div class="container">
+    <div class="my-impact__flex-box">
+      <div class="my-impact__left-box">
+        <h2 class="my-impact__left-box-title">Turning Ideas
+          <span class="my-impact__left-box-title--span">into Reality</span>
+        </h2>
       </div>
-      <div class="banner-box-right__image">
-        <img src="images/afrin_dp.png" alt="afrin-fathima" class="banner-box-right__feature">
+      <div class="my-impact__right-box">
+        <div class="my-impact-card">
+          <h3 class="my-impact-card-count">2+</h3>
+          <p class="my-impact-card-title">Years of Experience</p>
+        </div>
+        <div class="my-impact-card">
+          <h3 class="my-impact-card-count">15+</h3>
+          <p class="my-impact-card-title">Completed Projects</p>
+        </div>
+        <div class="my-impact-card">
+          <h3 class="my-impact-card-count">10+</h3>
+          <p class="my-impact-card-title">Technologies Mastered</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="our-services" id="about">
-  <div class="container">
-  <h2 class="our-services__title">My Development Services</h2>
-  <p class="our-services__description">I am a frontend developer with a passion for creating responsive, interactive, and visually appealing web applications. My expertise includes building modern, user-friendly websites and applications using the latest technologies.</p>
-  <p class="our-services__description">With hands-on experience in HTML, CSS, JavaScript, and frameworks like React, I specialize in delivering seamless digital experiences that enhance user engagement and performance.</p>
-  <p class="our-services__description">From crafting intuitive UI/UX designs to implementing scalable frontend solutions, I am committed to helping businesses establish a strong online presence and achieve their digital goals.</p>
   </div>
   </section>  
-  <section class="service-card__cta" id="services">
-    <div class="container">
-      <div class="service-cards">
-        <a href="#" class="service-card">
-          <img src="images/figma.webp" alt="Figma UI/UX Design" class="service-card__image">
-          <h3 class="service-card__title">UI/UX <br>Design</h3>
-          <p class="service-card__description">Transforming ideas into visually stunning, user-friendly designs with Figma and modern design principles.</p>
-        </a>
-        <a href="#" class="service-card">
-          <img src="images/web-dev.png" alt="Web Development" class="service-card__image">
-          <h3 class="service-card__title">Web <br>Development</h3>
-          <p class="service-card__description">Building high-performance, responsive websites that bring concepts to life using cutting-edge technologies.</p>
-        </a>
-        <a href="#" class="service-card">
-          <img src="images/frontend-development.webp" alt="Frontend Development" class="service-card__image">
-          <h3 class="service-card__title">Frontend <br>Development</h3>
-          <p class="service-card__description">Developing seamless, interactive experiences with React, JavaScript, and modern frameworks.</p>
-        </a>
-        <a href="#" class="service-card">
-          <img src="images/js.webp" alt="JavaScript Development" class="service-card__image">
-          <h3 class="service-card__title">JavaScript <br>Expertise</h3>
-          <p class="service-card__description">Creating dynamic, scalable, and engaging applications with JavaScript, optimizing performance and efficiency.</p>
-        </a>
-        <a href="#" class="service-card">
-          <img src="images/seo.png" alt="SEO Optimization" class="service-card__image">
-          <h3 class="service-card__title">SEO & <br>Optimization</h3>
-          <p class="service-card__description">Boosting online visibility with powerful SEO strategies, enhancing website ranking and engagement.</p>
-        </a>
-        <a href="#" class="service-card">
-          <img src="images/responsive.png" alt="Responsive Web Design" class="service-card__image">
-          <h3 class="service-card__title">Responsive <br>Design</h3>
-          <p class="service-card__description">Ensuring pixel-perfect, seamless experiences across all devices with modern, responsive design techniques.</p>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="our-impact">
-    <div class="container">
-      <div class="our-impact__flex-box">
-        <div class="our-impact__left-box">
-          <h2 class="our-impact__left-box-title">
-            My <span class="our-impact__left-box-title--span">Expertise & Journey</span> That Drive Results
-          </h2>
-        </div>
-        <div class="our-impact__right-box">
-          <div class="our-impact-card">
-            <img src="images/Mediamodifier-Design (1).svg" class="our-impact-card-img" alt="Years of Experience">
-            <h3 class="our-impact-card-count">2+</h3>
-            <p class="our-impact-card-title">Years of Experience</p>
-          </div>
-          <div class="our-impact-card">
-            <img src="images/Mediamodifier-Design (1).svg" class="our-impact-card-img" alt="Projects Completed">
-            <h3 class="our-impact-card-count">15+</h3>
-            <p class="our-impact-card-title">Completed Projects</p>
-          </div>
-          <div class="our-impact-card">
-            <img src="images/Mediamodifier-Design (1).svg" class="our-impact-card-img" alt="Skills & Technologies">
-            <h3 class="our-impact-card-count">10+</h3>
-            <p class="our-impact-card-title">Technologies Mastered</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-area">
-          <div class="footer-area__left">
-            <a href="#" class="logo">
-              <img src="images/afrin-fathima.png" alt="Afrin Fathima Logo">
-            </a>
-            <p>Passionate Web Developer creating modern and responsive websites.</p>
-          </div>
-          <div class="footer-area__right">
-            <div class="footer-area__right-content">
-              <h2>Quick Links</h2>
-              <ul class="list">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-            <div class="footer-area__right-content">
-              <h2>Follow Me</h2>
-              <ul class="list">
-                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-                <li><a href="https://github.com" target="_blank">GitHub</a></li>
-                <li><a href="https://twitter.com" target="_blank">Medium</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <p>&copy; 2025 Afrin Fathima. All Rights Reserved.</p>
-      </div>
-    </div>
-  </footer>  
+<section class="service-card__cta" id="services">
+<div class="container">
+  <h3 class="service-cards__title">My Development Services</h3>
+  <div class="service-cards">
+    <a href="#" class="service-card">
+      <img src="images/responsive-design.webp" alt="Front-End Development" class="service-card__image">
+      <h5 class="service-card__title">Front-End Development</h5>
+      <p class="service-card__item">I craft fast, interactive, and mobile-friendly websites using HTML, CSS, JavaScript, React.js, and Bootstrap. Ensuring seamless user experience across all devices with pixel-perfect, responsive designs.</p>
+    </a>
+    <a href="#" class="service-card">
+      <img src="images/search-engine-optimization.webp" alt="SEO & Performance Optimization" class="service-card__image">
+      <h5 class="service-card__title">SEO & Performance Optimization</h5>
+      <p class="service-card__item">Improve search rankings with SEO best practices like meta tags, schema markup, and structured data. Enhance website speed with lazy loading, script minification, and advanced performance optimization techniques.</p>
+    </a>
+    <a href="#" class="service-card">
+      <img src="images/hubspot.webp" alt="HubSpot CMS & Web Solutions" class="service-card__image">
+      <h5 class="service-card__title">HubSpot CMS & Web Solutions</h5>
+      <p class="service-card__item">Specializing in HubSpot CMS theme setup, custom module development, and website creation. Implementing API integrations and version control via GitHub to build scalable, SEO-friendly web solutions.</p>
+    </a>
+  </div>
 </div>
-<script src="https://www.blueoshan.com/hs-fs/hub/2419095/hub_generated/template_assets/145585738389/1700034920244/Blueoshan__Website_2023_Version_2/js/swiper.min.js"></script>
+</section>
+<section class="contact-me" id="contact">
+<div class="container">
+    <div class="contact-me__content">
+        <h4 class="contact-me__title">Let’s Build Something Amazing Together!</h4>
+        <p class="contact-me__description">Have a project in mind, need a website upgrade, or just want to say hello? Drop your details below, and I’ll get back to you ASAP!</p>
+        <form onsubmit="sendMail(event)" id="contact-form" class="contact-form__content">
+          <div class="contact-me__form">
+              <div class="contact-me__form-mail">                
+                  <input type="email" id="email" placeholder="Email Address here" required>
+              </div>
+              <div class="contact-me__form-btn">
+                  <button type="submit" class="primary-btn cm-btn">Contact Me</button>
+              </div>
+          </div>
+          <p id="thank-you-message" style="display: none; color: green; margin-top: 10px;"></p>
+      </form>        
+    </div>
+</div>
+</section>
+<footer class="footer">
+<div class="footer-bottom">
+  <div class="container">
+    <p>&copy; 2025 Afrin Fathima. All Rights Reserved.</p>
+  </div>
+</div>
+</footer>  
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="config.js"></script>
+<script>
+(function () {
+  emailjs.init(CONFIG.EMAILJS_USER_ID); 
+})();
+function sendMail(event) {
+  event.preventDefault(); 
+
+  let email = document.getElementById("email").value;
+  let messageBox = document.getElementById("thank-you-message");
+
+  if (!email) {
+      messageBox.style.display = "block";
+      messageBox.style.color = "red";
+      messageBox.textContent = "Please enter a valid email!";
+      hideMessage(messageBox); 
+      return;
+  }
+
+  emailjs.send(
+    CONFIG.EMAILJS_SERVICE_ID, 
+    CONFIG.EMAILJS_TEMPLATE_ID, 
+    { email: email }
+  ).then(() => {
+      messageBox.style.display = "block";
+      messageBox.style.color = "green";
+      messageBox.textContent = "Thank you! I'll get in touch soon. 😊";
+      document.getElementById("contact-form").reset(); 
+      hideMessage(messageBox); 
+  }).catch((error) => {
+      messageBox.style.display = "block";
+      messageBox.style.color = "red";
+      messageBox.textContent = "Something went wrong. Please try again!";
+      console.error("Email sending error:", error);
+      hideMessage(messageBox); 
+  });
+}
+function hideMessage(element) {
+  setTimeout(() => {
+      element.style.display = "none";
+  }, 3000);
+}
+document.querySelectorAll('.header-navbar__list-item').forEach(item => {
+  item.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetId);
+      if (targetSection) {
+          window.scrollTo({
+              top: targetSection.offsetTop - 85, 
+              behavior: 'smooth'
+          });
+      }
+  });
+});
+function toggleMenu() {
+let menu = document.querySelector(".menu-bar");
+menu.classList.toggle("active");
+}
+document.querySelectorAll(".header-navbar__list-item").forEach(item => {
+item.addEventListener("click", () => {
+  let menu = document.querySelector(".menu-bar");
+  if (menu.classList.contains("active")) {
+    menu.classList.remove("active"); 
+  }
+});
+});
+
+function animateSkills() {
+document.querySelectorAll(".my-skill__fill").forEach(skill => {
+  const percent = skill.getAttribute("data-percent");
+  skill.style.width = percent + "%";
+  skill.querySelector(".my-skill__percent").textContent = percent + "%";
+});
+}
+const skillSection = document.getElementById("skills");
+const progressObserver = new IntersectionObserver(entries => {
+if (entries[0].isIntersecting) {
+  animateSkills();
+}
+}, { threshold: 0.5 });
+
+progressObserver.observe(skillSection);
+let started = false;
+function startCounter() {
+if (started) return;
+started = true;
+document.querySelectorAll(".my-impact-card-count").forEach(counter => {
+let target = parseInt(counter.textContent);
+let count = 0;
+let interval = setInterval(() => {
+  count++;
+  counter.textContent = count + "+";
+  if (count >= target) clearInterval(interval);
+}, 50);
+});
+}
+let observer = new IntersectionObserver(entries => {
+if (entries[0].isIntersecting) startCounter();
+}, { threshold: 0.5 });
+observer.observe(document.querySelector(".my-impact"));
+</script>
 <script>
 var swipers = new Swiper(".text-animations", {
-  direction: "vertical",
-  loop: true,
-  effect: "cube",
-  grabCursor: true,
-  cubeEffect: {
-  shadow: false,
-  slideShadows: false,
-  },
-  autoplay: {
-  delay: 2500,
-  disableOnInteraction: false,
-  },
+direction: "vertical",
+loop: true,
+effect: "cube",
+grabCursor: true,
+cubeEffect: {
+shadow: false,
+slideShadows: false,
+},
+autoplay: {
+delay: 2500,
+disableOnInteraction: false,
+},
 });
 </script>
 </body>

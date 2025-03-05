@@ -1,448 +1,165 @@
 @font-face {
-    font-display: swap;
-    font-family: poppins;
-    font-style: normal;
-    font-weight: 300;
-    src: url(fonts/Poppins-Thin.woff2) format("woff2"),url(fonts/Poppins-Thin.woff) format("woff")
-    }
-    
-    @font-face {
-    font-display: swap;
-    font-family: poppins;
-    font-style: normal;
-    font-weight: 400;
-    src: url(fonts/Poppins-Regular.woff2) format("woff2"),url(fonts/Poppins-Regular.woff) format("woff")
-    }
-    
-    @font-face {
-    font-display: swap;
-    font-family: poppins;
-    font-style: normal;
-    font-weight: 500;
-    src: url(fonts/Poppins-Medium.woff2) format("woff2"),url(fonts/Poppins-Medium.woff) format("woff")
-    }
-    
-    @font-face {
-    font-display: swap;
-    font-family: poppins;
-    font-style: normal;
-    font-weight: 600;
-    src: url(fonts/Poppins-SemiBold.woff2) format("woff2"),url(fonts/Poppins-SemiBold.woff) format("woff")
-    }
-    
-    @font-face {
-    font-display: swap;
-    font-family: poppins;
-    font-style: normal;
-    font-weight: 700;
-    src: url(fonts/Poppins-Bold.woff2) format("woff2"),url(fonts/Poppins-Bold.woff) format("woff")
-    }
-    
-    @font-face {
-    font-display: swap;
-    font-family: poppins;
-    font-style: normal;
-    font-weight: 800;
-    src: url(fonts/Poppins-ExtraBold.woff2) format("woff2"),url(fonts/Poppins-ExtraBold.woff) format("woff")
-    }
-    :root{
-    --font-family-primary: "Poppins",sans-serif;
-    --font-size-default: 16px;
-    --line-height-dafault: 1.4;
-    --line-height-secondary: 1.6;
-    --font-weight-normal: 400;
-    --font-weight-bold: 700;
-    
-    --color-primary: #463f3a;  
-    --color-secondary: #bee3db; 
-    --color-accent: #555b6e; 
-    --color-bg: #dee2ff;
-    --color-text-primary: #2D2D2D; 
-    --color-light: #FFFFFF;    
-    --color-dark: #0F1B2D;  
+  font-display: swap;
+  font-family: poppins;
+  font-style: normal;
+  font-weight: 300;
+  src: url(fonts/Poppins-Thin.woff2) format("woff2"),url(fonts/Poppins-Thin.woff) format("woff")
+  }
+  
+  @font-face {
+  font-display: swap;
+  font-family: poppins;
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/Poppins-Regular.woff2) format("woff2"),url(fonts/Poppins-Regular.woff) format("woff")
+  }
+  
+  @font-face {
+  font-display: swap;
+  font-family: poppins;
+  font-style: normal;
+  font-weight: 500;
+  src: url(fonts/Poppins-Medium.woff2) format("woff2"),url(fonts/Poppins-Medium.woff) format("woff")
+  }
+  
+  @font-face {
+  font-display: swap;
+  font-family: poppins;
+  font-style: normal;
+  font-weight: 600;
+  src: url(fonts/Poppins-SemiBold.woff2) format("woff2"),url(fonts/Poppins-SemiBold.woff) format("woff")
+  }
+  
+  @font-face {
+  font-display: swap;
+  font-family: poppins;
+  font-style: normal;
+  font-weight: 700;
+  src: url(fonts/Poppins-Bold.woff2) format("woff2"),url(fonts/Poppins-Bold.woff) format("woff")
+  }
+  
+  @font-face {
+  font-display: swap;
+  font-family: poppins;
+  font-style: normal;
+  font-weight: 800;
+  src: url(fonts/Poppins-ExtraBold.woff2) format("woff2"),url(fonts/Poppins-ExtraBold.woff) format("woff")
+  }
+  :root{
+  --font-family-primary: "Poppins",sans-serif;
+  --font-size-default: 16px;
+  --line-height-dafault: 1.4;
+  --line-height-secondary: 1.6;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  
+  --color-primary: #463f3a;  
+  --color-secondary: #bee3db; 
+  --color-accent: #555b6e; 
+  --color-light: #FFFFFF;    
+  --color-dark: #0F1B2D;  
 
-    --border-radius-primary: 15px;
-    --border-color: #dee2e6;
-    
-    --box-shadow-primary: 0 6px 15px rgba(0,0,0,.08); 
-    }
-    *,*::after,*::before{margin: 0;padding: 0;box-sizing: border-box;}
-    html { scroll-behavior: smooth; }
-    body {
-    width: 100%;
-    height: 100dvh;
+  --border-radius-primary: 15px;
+  --border-color: #dee2e6;
+  
+  --box-shadow-primary: 0 6px 15px rgba(0,0,0,.08); 
+  }
+  *,*::after,*::before{margin: 0;padding: 0;box-sizing: border-box;}
+  html {scroll-behavior: smooth;}
+  body{
+    color: var(--color-primary);
     font-family: var(--font-family-primary);
-    font-weight: var(--font-weight-normal);
-    overflow-x: hidden;
-    --h1-font-size: 36px;
-    --h2-font-size: 24px;
-    --h3-font-size: 23px;
-    --h4-font-size: 22px;
-    --h5-font-size: 20px;
-    --h6-font-size: var(--font-size-default);
-    --container-width: 100%;
-    }
-    
-    @media (min-width: 576px) {
+    font-size: var(--font-size-default);
+    font-weight: var(--font-weight-400);
+    line-height: var(--line-height-default);
+    letter-spacing: var(--letter-spacing-default-400);
+    --h1-font-size: 38px;
+    --h2-font-size: 34px;
+    --h3-font-size: 30px;
+    --h4-font-size: 26px;
+    --h5-font-size: 22px;
+    --h6-font-size: 18px;
+    --h1-line-height: 46px;
+    --h2-line-height: 38px;
+    --h3-line-height: 34px;
+    --h4-line-height: 26px;
+    --h5-line-height: 22px;
+    --h6-line-height: 18px;
+    --container-width: 	100%;
+}
+@media(min-width: 576px) {
     body {
-      --container-width: 540px;
+        --container-width:540px;
+        --container-width-80: 540px
     }
-    }
-    @media (min-width: 768px) {
+}
+@media(min-width: 768px) {
     body {
-        --h1-font-size: 50px;
-        --h2-font-size: 34px;
-        --h3-font-size: 30px;
-        --h6-font-size: 18px;
-        --container-width: 720px;
+        --container-width:720px;
+        --container-width-80: 720px
     }
+}
+@media(min-width:768px) and (max-width:1199.98px){
+    body{
+        --h1-font-size: 48px;
+        --h2-font-size: 40px;
+        --h3-font-size: 32px;
+        --h4-font-size: 28px;
+        --h5-font-size: 24px;
+        --h6-font-size: 20px;
+        --h1-line-height: 58px;
+        --h2-line-height: 50px;
+        --h3-line-height: 40px;
+        --h4-line-height: 36px;
+        --h5-line-height: 32px;
+        --h6-line-height: 30px;
     }
-    
-    @media (min-width: 992px) {
+}
+@media(min-width: 992px) {
     body {
+        --container-width:960px;
+        --container-width-80: 960px
+    }
+}
+@media(min-width:1200px){
+    body{
         --h1-font-size: 60px;
-        --h2-font-size: 52px;
-        --h3-font-size: 50px;
-        --h4-font-size: 24px;
-        --h5-font-size: 28px;
-        --container-width: 960px;
+        --h2-font-size: 48px;
+        --h3-font-size: 40px;
+        --h4-font-size: 32px;
+        --h1-line-height: 72px;
+        --h2-line-height: 58px;
+        --h3-line-height: 50px;
+        --h4-line-height: 40px;
+        --h5-line-height: 32px;
+        --h6-line-height: 30px;
+        --container-width: 1140px;
+        --container-width-80: 1184px;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    body {
+      --container-width:1200px
     }
     }
-    @media (min-width: 1200px) {
-      body {
-        --container-width:1140px
-      }
-      }
-      
-      @media only screen and (min-width: 1280px) {
-      body {
-        --container-width:1200px
-      }
-      }
-    h1, h2, h3, h4, h5, h6 {
-        font-family: var(--font-family-sans);
-        font-weight: var(--font-weight-bold);
-        line-height: var(--line-height-dafault);
-    }
-    h1{font-size: var(--h1-font-size);}
-    h2{font-size: var(--h2-font-size);}
-    h3{font-size: var(--h3-font-size);}
-    h4{font-size: var(--h4-font-size);}
-    h5{font-size: var(--h5-font-size);}
-    h6{font-size: var(--h6-font-size);}
-    p{margin-bottom: 15px;line-height: var(--line-height-dafault);font-size: var(--h6-font-size);font-family: var(--font-family-primary);}
-    .container {margin-left: auto;margin-right: auto;padding-left: 1rem;padding-right: 1rem;max-width: var(--container-width);box-sizing: border-box;}
-    a{text-decoration: none;}
-    img{max-width: 100%;height: auto;}
-    li{list-style-type: none;}
-    button{border: none;outline: none;}
-    input{outline: none;}
-    /* .animate-element1 {position: absolute;left: 0px;top: 85px;animation: myfirst 20s infinite;animation-timing-function: linear;z-index: -1;}
-    .animate-element2 {position: absolute;right: 20%;top: 20px;animation: mysecond 20s infinite;animation-timing-function: linear;z-index: -1;}
-    .animate-element3{position: absolute;right: 10%;top: 10%;animation: mythird 20s infinite;animation-timing-function: linear;z-index: -1;}
-    .animate-element4 {position: absolute;left: 45%;bottom: 80px;animation: myfourth 20s infinite;animation-timing-function: linear;z-index: -1;}
-      @keyframes sprinkle {
-        0% {
-            opacity: 1;
-            transform: translateX(0) translateY(0)
-        }
-    
-        to {
-            opacity: 0;
-            transform: translateX(100vw) translateY(100vh)
-        }
-    }
-    
-    .animate-element5 {
-        display: none
-    }
-    
-    .animate-element6 {animation: elementtwo 20s infinite;animation-timing-function: linear;position: absolute;right: 20%;top: 20px;z-index: -1}
-    .animate-element7 {animation: elementthree 20s infinite;animation-timing-function: linear;position: absolute;right: 10%;top: 10%;z-index: -1}
-    .animate-element8 {animation: elementfour 20s infinite;animation-timing-function: linear;bottom: 80px;left: 45%;position: absolute;z-index: -1}
-    @media(min-width :768px){
-        .animate-element5 {animation: elementone 10s infinite;animation-timing-function: linear;bottom: 50px;display: block;position: absolute;right: 10%;z-index: -1}
-    }
-    
-    @keyframes elementone {
-        0% {
-            bottom: 50px
-        }
-    
-        50% {
-            bottom: 100px
-        }
-    
-        to {
-            bottom: 50px
-        }
-    }
-    
-    @keyframes elementtwo {
-        0% {
-            right: 20%;
-            top: 0
-        }
-    
-        25% {
-            right: 25%;
-            top: 0
-        }
-    
-        50% {
-            right: 20%;
-            top: 100px
-        }
-    
-        75% {
-            right: 25%;
-            top: 100px
-        }
-    
-        to {
-            right: 20%;
-            top: 0
-        }
-    }
-    
-    @keyframes elementthree {
-        0% {
-            bottom: 0;
-            left: 45%
-        }
-    
-        25% {
-            bottom: 100px;
-            left: 55%
-        }
-    
-        50% {
-            bottom: 60px;
-            left: 65%
-        }
-    
-        75% {
-            bottom: 100px;
-            left: 55%
-        }
-    
-        to {
-            bottom: 0;
-            left: 45%
-        }
-    }
-    
-    @keyframes elementfour {
-        0% {
-            bottom: 0;
-            left: 45%
-        }
-    
-        25% {
-            bottom: 100px;
-            left: 55%
-        }
-    
-        50% {
-            bottom: 60px;
-            left: 65%
-        }
-    
-        75% {
-            bottom: 100px;
-            left: 55%
-        }
-    
-        to {
-            bottom: 0;
-            left: 45%
-        }
-    }
-    
-    @-webkit-keyframes myOrbit {
-        0% {
-            -webkit-transform: rotate(0deg) translateX(50px) rotate(0deg)
-        }
-    
-        to {
-            -webkit-transform: rotate(1turn) translateX(50px) rotate(-1turn)
-        }
-    }
-    
-    @-moz-keyframes myOrbit {
-        0% {
-            -moz-transform: rotate(0deg) translateX(50px) rotate(0deg)
-        }
-    
-        to {
-            -moz-transform: rotate(1turn) translateX(50px) rotate(-1turn)
-        }
-    }
-    
-    @-o-keyframes myOrbit {
-        0% {
-            -o-transform: rotate(0deg) translateX(50px) rotate(0deg)
-        }
-    
-        to {
-            -o-transform: rotate(1turn) translateX(50px) rotate(-1turn)
-        }
-    }
-    
-    @keyframes myOrbit {
-        0% {
-            transform: rotate(0deg) translateX(50px) rotate(0deg)
-        }
-    
-        to {
-            transform: rotate(1turn) translateX(50px) rotate(-1turn)
-        }
-    }
-      
-      @keyframes myfirst {
-        0% {
-          left: 0px;
-          top: 0px;
-        }
-      
-        25% {
-          left: 100px;
-          top: 0px;
-        }
-      
-        50% {
-          left: 100px;
-          top: 100px;
-        }
-      
-        75% {
-          left: 50px;
-          top: 100px;
-        }
-      
-        100% {
-          left: 0px;
-          top: 0px;
-        }
-      }
-      
-      @keyframes mysecond {
-        0% {
-          right: 20%;
-          top: 0px;
-        }
-      
-        25% {
-          right: 25%;
-          top: 0px;
-        }
-      
-        50% {
-          right: 20%;
-          top: 100px;
-        }
-      
-        75% {
-          right: 25%;
-          top: 100px;
-        }
-      
-        100% {
-          right: 20%;
-          top: 0px;
-        }
-      }
-      @keyframes mythird {
-        0% {
-          left: 45%;
-          bottom: 0px;
-        }
-      
-        25% {
-          left: 55%;
-          bottom: 100px;
-        }
-      
-        50% {
-          left: 65%;
-          bottom: 60px;
-        }
-      
-        75% {
-          left: 55%;
-          bottom: 100px;
-        }
-      
-        100% {
-          left: 45%;
-          bottom: 0px;
-        }
-      }
-      
-      @keyframes myfourth {
-        0% {
-          left: 45%;
-          bottom: 0px;
-        }
-      
-        25% {
-          left: 55%;
-          bottom: 100px;
-        }
-      
-        50% {
-          left: 65%;
-          bottom: 60px;
-        }
-      
-        75% {
-          left: 55%;
-          bottom: 100px;
-        }
-      
-        100% {
-          left: 45%;
-          bottom: 0px;
-        }
-      }
-      
-      @-webkit-keyframes myOrbit {
-        from {
-          -webkit-transform: rotate(0deg) translateX(50px) rotate(0deg);
-        }
-      
-        to {
-          -webkit-transform: rotate(360deg) translateX(50px) rotate(-360deg);
-        }
-      }
-      
-      @-moz-keyframes myOrbit {
-        from {
-          -moz-transform: rotate(0deg) translateX(50px) rotate(0deg);
-        }
-      
-        to {
-          -moz-transform: rotate(360deg) translateX(50px) rotate(-360deg);
-        }
-      }
-      
-      @-o-keyframes myOrbit {
-        from {
-          -o-transform: rotate(0deg) translateX(50px) rotate(0deg);
-        }
-      
-        to {
-          -o-transform: rotate(360deg) translateX(50px) rotate(-360deg);
-        }
-      }
-      
-      @keyframes myOrbit {
-        from {
-          transform: rotate(0deg) translateX(50px) rotate(0deg);
-        }
-      
-        to {
-          transform: rotate(360deg) translateX(50px) rotate(-360deg);
-        }
-      } */
-    
+
+h1,.h1{font-size: var(--h1-font-size);line-height: var(--h1-line-height);letter-spacing: var(--h1-letter-spacing-600);}
+h2,.h2{font-size: var(--h2-font-size);line-height: var(--h2-line-height);letter-spacing: var(--h2-letter-spacing-600);}
+h3,.h3{font-size: var(--h3-font-size);line-height: var(--h3-line-height);letter-spacing: var(--h3-letter-spacing-600);}
+h4,.h4{font-size: var(--h4-font-size);line-height: var(--h4-line-height);letter-spacing: var(--h4-letter-spacing-600);}
+h5,.h5{font-size: var(--h5-font-size);line-height: var(--h5-line-height);letter-spacing: var(--h5-letter-spacing-600);}
+h6,.h6{font-size: var(--h6-font-size);line-height: var(--h6-line-height);letter-spacing: var(--h6-letter-spacing-600);}
+a{text-decoration: none;}
+img{max-width: 100%;height: auto;}
+li{list-style-type: none;}
+button{border: none;outline: none;}
+input{outline: none;}
+p{line-height: var(--line-height-secondary);}
+.container{max-width: var(--container-width);width: 100%;margin-left: auto;margin-right: auto;padding-left: 1rem;padding-right: 1rem;}
+.primary-btn {font-size: 16px; font-weight: 600; text-align: center;padding: 8px 20px;background-color: transparent; border-radius: 10px; border: 1px solid #1B3A57; transition: 0.5s; position: relative; overflow: hidden; cursor: pointer; z-index: 1;color: var(--color-primary);display: inline-block;box-shadow: var(--box-shadow-primary); }
+.primary-btn::after, .primary-btn::before { content: ""; display: block; height: 100%; width: 100%; transform: skew(90deg) translate(-50%, -50%); position: absolute; inset: 50%; left: 25%; z-index: -1; transition: 0.5s ease-out; background-color: var(--color-primary); }
+.primary-btn::before { top: -50%; left: -25%; transform: skew(90deg) rotate(180deg) translate(-50%, -50%); }
+.primary-btn:hover::before { transform: skew(45deg) rotate(180deg) translate(-50%, -50%); }
+.primary-btn:hover::after { transform: skew(45deg) translate(-50%, -50%); }
+.primary-btn:hover { color: #fff; }
+.primary-btn:active { filter: brightness(0.7); transform: scale(0.98); }
