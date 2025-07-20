@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <style>
 .banner{padding-top: 25px;}
-.banner,.about-me,.my-impact,.service-card__cta,.my-skills,.contact-me,.my-blogs{padding-bottom: 25px;}
+.banner,.about-me,.my-impact,.service-card__cta,.my-skills,.contact-me,.my-blogs,.my-works{padding-bottom: 25px;}
 .header{box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;background-color: var(--color-light);padding-bottom: 20px;padding-top: 20px;position: -webkit-sticky;position: sticky;top: 0;z-index: 1028;}
 .menu-bar svg{width: 25px; height: 25px;fill: var(--color-primary);}
 .menu-bar .menu-close, .menu-bar.active .menu-open{display: none;}
@@ -48,6 +48,10 @@
 .my-skill__fill { height: 100%; width: 0; background: var(--color-accent); transition: width 2s ease-in-out; position: relative; border-radius: 6px; }
 .my-skill__percent { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 12px; font-weight: bold; color: white; opacity: 1; transition: opacity 1s ease-in-out; }
 .my-skill { margin-bottom: 1rem; }
+.my-works__title{margin-bottom: 2rem;text-align: center;}
+.my-work { display: flex ; gap: 2rem; flex-wrap: wrap; align-items: center;}
+.myw-title,.myw-subtitle,.myw-description{margin-bottom: 1rem;}
+.myw-btn,.myw-description,.myw-feedback{margin-bottom: 2rem;}
 .service-cards__title{margin-bottom: 2rem;text-align: center;}
 .service-card:hover{color: var(--color-dark );}
 .service-cards { display: grid; grid-template-columns: 1fr; gap: 2rem; padding-bottom: 25px; }
@@ -111,7 +115,7 @@
 }
 @media(min-width: 768px){
 .banner{padding-top: 50px;}
-.banner,.about-me,.my-impact,.service-card__cta,.my-skills,.contact-me,.my-blogs{padding-bottom: 50px;}
+.banner,.about-me,.my-impact,.service-card__cta,.my-skills,.contact-me,.my-blogs,.my-works{padding-bottom: 50px;}
 .banner-box{grid-template-columns: 1fr 1fr;}
 .banner-box-left__content{order: 1;}
 .banner-box-right__image{order: 2;margin: auto;width: -webkit-fill-available;}
@@ -130,6 +134,8 @@
 .header-content__menu { display: flex ; align-items: center; gap: 2rem;flex-direction: row; }
 .my-impact__flex-box {display: grid;grid-template-columns: 2fr 3fr;}
 .my-impact__left-box-title {text-align: left;}
+.myw-img { width: calc(50% - 4rem / 2);}
+.myw-content{width: 50%;}
 .service-cards{grid-template-columns: repeat(3,1fr);}
 .contact-me__form{display: flex;align-items: center;gap: 1rem;}
 .contact-me__form-mail{width: calc(60% - 1rem/2);margin: 0;}
@@ -255,6 +261,23 @@
   </div>
 </div>
 </section> 
+<section class="my-works">
+  <div class="container">
+    <h2 class="my-works__title">Client’s Vision, My Execution</h2>
+    <div class="my-work">
+      <div class="myw-img">
+        <img src="images/client-ss.webp" alt="client testimonial work">
+      </div>
+      <div class="myw-content">
+      <h4 class="myw-title">Susmithas Makeup Artistry</h4>
+      <h6 class="myw-subtitle">Professional Portfolio Website for a Makeup Artist</h6>
+      <p class="myw-description">Handled the project from scratch — from layout planning to design and frontend development. With no Figma or predefined references, I designed the full website structure based on the client’s content and style preferences. Delivered a fully responsive, mobile-friendly makeup portfolio site with clean design, easy navigation, and SEO optimization.</p>
+      <p class="myw-feedback"><strong>“She did an amazing job! It turned out exactly how I imagined — clean, simple, and elegant.”</strong></p>
+      <a href="https://susmithas-makeup-artistry.in/" class="myw-btn primary-btn">View My Work</a>
+    </div>
+    </div>
+  </div>
+</section>
 <section class="service-card__cta" id="services">
 <div class="container">
   <h3 class="service-cards__title">My Development Services</h3>
