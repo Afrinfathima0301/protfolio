@@ -2,7 +2,7 @@
 
 This is my personal **frontend developer portfolio**, built with HTML, CSS, and JavaScript. It highlights my projects, skills, and journey as a web developer focused on crafting clean, responsive, and user-friendly web experiences.
 
-> 🔗 **Live Site**: [https://afrinfathima.fullstackstudio.in/](https://afrinfathima.fullstackstudio.in/)
+> 🔗 **Live Site**: [https://portfolio-afrin-fathima.vercel.app/](https://portfolio-afrin-fathima.vercel.app/)
 
 ---
 
