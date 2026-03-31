@@ -181,7 +181,7 @@
     <h6 class="banner-box-left__content-subtitle">Crafting Modern & Scalable Web Solutions</h6>
     <div class="my-impact__right-box">
       <div class="my-impact-card">
-        <h3 class="my-impact-card-count">2+</h3>
+        <h3 class="my-impact-card-count">3+</h3>
         <p class="my-impact-card-title">Years of Experience</p>
       </div>
       <div class="my-impact-card">
@@ -213,7 +213,7 @@
       <h2 class="about-me__title">Who am i?</h2>
       <p class="about-me__description-content">I'm Afrin Fathima, a passionate Front-End Developer & HubSpot CMS Expert dedicated to crafting high-performing, visually engaging, and SEO-optimized websites. With 2+ years of experience, I specialize in building responsive web applications using HTML, CSS, JavaScript, React.js, and Bootstrap, ensuring seamless user experiences across all devices.</p>
       <p class="about-me__description-content">Beyond development, I focus on website performance, SEO strategies, and HubSpot CMS customization, including theme setup, module conversions, and API integrations. Whether it's a sleek business website, a high-speed landing page, or a fully optimized HubSpot site, I bring creativity and technical expertise to deliver exceptional results.</p>
-      <p class="about-me__description-content">💡 Let’s create something impactful together! 🚀</p>
+      <p class="about-me__description-content">Let’s create something impactful together!</p>
     </div>
     <div id="skills" class="my-skills">
       <h2 class="my-skills__title">My Skills</h2>
@@ -340,6 +340,21 @@
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script src="config.js"></script>
 <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const skillFills = document.querySelectorAll('.my-skill__fill');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const fill = entry.target;
+        fill.style.width = fill.getAttribute('data-percent') + '%';
+        observer.unobserve(fill);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  skillFills.forEach(fill => observer.observe(fill));
+});
 (function () {
   emailjs.init(CONFIG.EMAILJS_USER_ID); 
 })();
